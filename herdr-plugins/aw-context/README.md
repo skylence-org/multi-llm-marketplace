@@ -78,7 +78,7 @@ awctx bootstrap apply  presets/aw-baseline.json   # on every other device
 ## Install
 
 ```bash
-herdr plugin install skylence-be/multi-llm-marketplace/herdr-plugins/aw-context
+herdr plugin install skylence-org/multi-llm-marketplace/herdr-plugins/aw-context
 # or, for local development against this checkout:
 herdr plugin link /abs/path/to/multi-llm-marketplace/herdr-plugins/aw-context
 ```

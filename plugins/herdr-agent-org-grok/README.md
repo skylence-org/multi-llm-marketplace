@@ -14,7 +14,7 @@ onto those primitives and a **filesystem board** (no Solo MCP).
 2. Orchestrator and workers must run **inside Herdr panes** (`HERDR_ENV=1`).
 3. Optional integrations for richer state: `herdr integration install claude`
    (and codex/opencode/etc. as needed). Grok is a supported `agent start --kind`.
-4. Recommended: the **org-waker** herdr plugin (`herdr plugin install skylence-be/multi-llm-marketplace/herdr-plugins/org-waker`): the event-driven wake mechanism L6 builds on; without it the org runs on fallback waits alone.
+4. Recommended: the **org-waker** herdr plugin (`herdr plugin install skylence-org/multi-llm-marketplace/herdr-plugins/org-waker`): the event-driven wake mechanism L6 builds on; without it the org runs on fallback waits alone.
 
 ## What it provides
 
@@ -39,9 +39,9 @@ onto those primitives and a **filesystem board** (no Solo MCP).
 ## Install
 
 ```bash
-grok plugin marketplace add skylence-be/multi-llm-marketplace
+grok plugin marketplace add skylence-org/multi-llm-marketplace
 grok plugin marketplace update multi-llm-marketplace
-grok plugin install herdr-agent-org-grok@skylence-be/multi-llm-marketplace --trust
+grok plugin install herdr-agent-org-grok@skylence-org/multi-llm-marketplace --trust
 ```
 
 Then bootstrap IN THE PANE SHELL, BEFORE starting the agent (exports made inside a session do not persist across its shell calls; the agent process inherits the pane shell's env and `dispatch-worker` forwards it via `--env`):

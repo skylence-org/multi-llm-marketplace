@@ -29,7 +29,7 @@ None of these duplicate Laravel Boost's generated reference skills or
 ## Install
 
 ```
-/plugin marketplace add skylence-be/multi-llm-marketplace
+/plugin marketplace add skylence-org/multi-llm-marketplace
 /plugin install laravel-livewire-filament-claude@multi-llm-marketplace
 ```
 

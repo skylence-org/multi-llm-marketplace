@@ -7,7 +7,7 @@ Not a Claude Code plugin: this is a **herdr** plugin, installed with herdr's own
 ## Install
 
 ```bash
-herdr plugin install skylence-be/multi-llm-marketplace/herdr-plugins/org-waker
+herdr plugin install skylence-org/multi-llm-marketplace/herdr-plugins/org-waker
 # or, for local development against this checkout:
 herdr plugin link /abs/path/to/multi-llm-marketplace/herdr-plugins/org-waker
 ```
