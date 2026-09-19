@@ -3,7 +3,7 @@
   "description": "Skylence multi-LLM marketplace: core baseline and agent-org plugins (Solo and Herdr substrates) for Grok, Claude, Codex, Antigravity.",
   "owner": {
     "name": "Skylence",
-    "contact": "github.com/skylence-be"
+    "contact": "github.com/skylence-org"
   },
   "plugins": [
     {
@@ -13,7 +13,7 @@
         "type": "local",
         "path": "./plugins/core-grok"
       },
-      "homepage": "https://github.com/skylence-be/multi-llm-marketplace",
+      "homepage": "https://github.com/skylence-org/multi-llm-marketplace",
       "category": "core",
       "keywords": [
         "core",
@@ -30,7 +30,7 @@
         "type": "local",
         "path": "./plugins/soloterm-agent-org-grok"
       },
-      "homepage": "https://github.com/skylence-be/multi-llm-marketplace",
+      "homepage": "https://github.com/skylence-org/multi-llm-marketplace",
       "category": "agent-org",
       "keywords": [
         "agent-org",
@@ -47,7 +47,7 @@
         "type": "local",
         "path": "./plugins/herdr-agent-org-grok"
       },
-      "homepage": "https://github.com/skylence-be/multi-llm-marketplace",
+      "homepage": "https://github.com/skylence-org/multi-llm-marketplace",
       "category": "agent-org",
       "keywords": [
         "agent-org",

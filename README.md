@@ -7,7 +7,7 @@ The agent-org plugins turn a single agent CLI into a conductor-and-workers
 organisation. The core plugins install each agent's opinionated baseline
 (hooks, guidelines, and session discipline).
 
-Owner: Skylence (github.com/skylence-be).
+Owner: Skylence (github.com/skylence-org).
 
 ## What's in here
 
@@ -72,13 +72,13 @@ plugin's manifest, not in this README.
 **Grok:**
 
 ```
-grok plugin marketplace add skylence-be/multi-llm-marketplace
+grok plugin marketplace add skylence-org/multi-llm-marketplace
 grok plugin marketplace update multi-llm-marketplace
-grok plugin install core-grok@skylence-be/multi-llm-marketplace --trust
+grok plugin install core-grok@skylence-org/multi-llm-marketplace --trust
 # Solo substrate (board/PTY via Solo MCP):
-grok plugin install soloterm-agent-org-grok@skylence-be/multi-llm-marketplace --trust
+grok plugin install soloterm-agent-org-grok@skylence-org/multi-llm-marketplace --trust
 # OR Herdr substrate (real panes; requires herdr + HERDR_ENV=1):
-grok plugin install herdr-agent-org-grok@skylence-be/multi-llm-marketplace --trust
+grok plugin install herdr-agent-org-grok@skylence-org/multi-llm-marketplace --trust
 ```
 
 Then run `/core-grok:setup` and use the org roles (orchestrator, planner, etc.).
@@ -87,20 +87,20 @@ For Herdr: install Herdr (`brew install herdr` or https://herdr.dev), run agents
 For full skyline MCP tools (skyline_read, skyline_edit with ¶path#TAG hash guards, skyline_grep, skyline_run, etc.) and the PreToolUse enforce hook that redirects native tools to skyline equivalents when the daemon is running:
 
 ```
-grok plugin marketplace add skylence-be/skylence-plugins
+grok plugin marketplace add skylence-org/skylence-plugins
 grok plugin marketplace update skylence-plugins
-grok plugin install skyline-grok@skylence-be/skylence-plugins --trust
+grok plugin install skyline-grok@skylence-org/skylence-plugins --trust
 ```
 
 The enforce hook (in skyline-grok) will be active for Grok sessions as long as the skyline daemon is up (fails open otherwise). See the skyline-grok README for details.
 
 **Note:** After adding, run `grok plugin marketplace update multi-llm-marketplace`.
-For install commands, use the full qualifier: `...@skylence-be/multi-llm-marketplace` (the short name may not resolve for installs).
+For install commands, use the full qualifier: `...@skylence-org/multi-llm-marketplace` (the short name may not resolve for installs).
 
 **Claude Code:**
 
 ```
-/plugin marketplace add skylence-be/multi-llm-marketplace
+/plugin marketplace add skylence-org/multi-llm-marketplace
 /plugin install core-claude@multi-llm-marketplace
 # Solo substrate (board/PTY via Solo MCP):
 /plugin install soloterm-agent-org@multi-llm-marketplace
@@ -138,6 +138,6 @@ grok inspect | grep -E '(core-grok|soloterm-agent-org-grok|herdr-agent-org-grok|
 grok plugin marketplace add /path/to/this/repo
 ```
 
-The marketplace will be usable via the GitHub shorthand (`skylence-be/multi-llm-marketplace`) once published.
+The marketplace will be usable via the GitHub shorthand (`skylence-org/multi-llm-marketplace`) once published.
 
 See the individual `plugins/*/README.md` files for plugin-specific details.
