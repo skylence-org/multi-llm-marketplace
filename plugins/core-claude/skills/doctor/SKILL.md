@@ -80,7 +80,7 @@ jq -e '.permissions.defaultMode == "bypassPermissions"' "$S" >/dev/null 2>&1 \
 # Memory is off via env vars only, in two places, and a shell export beats the
 # settings block. Report both, and report whether anything was already written,
 # because disabling the feature does not remove what it wrote.
-for v in CLAUDE_CODE_DISABLE_AUTO_MEMORY CLAUDE_CODE_DISABLE_ORG_MEMORY; do
+for v in CLAUDE_CODE_DISABLE_AUTO_MEMORY CLAUDE_CODE_DISABLE_ORG_MEMORY CLAUDE_CODE_DISABLE_FEEDBACK_SURVEY; do
   ins=$(jq -r --arg v "$v" '.env[$v] // "unset"' "$S" 2>/dev/null)
   prof=$(grep -h "export $v=1" ~/.zshrc ~/.bashrc 2>/dev/null | head -1)
   printf '%s: settings.env=%s shell=%s\n' "$v" "$ins" "$([ -n "$prof" ] && echo pinned || echo unpinned)"
